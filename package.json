@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/javiergradiche/afip-wsctg-node/issues"
   },
-  "homepage": "https://github.com/javiergradiche/afip-wsctg-node#readme"
+  "homepage": "https://github.com/javiergradiche/afip-wsctg-node#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "lodash": "4.12.0",
+    "moment": "^2.13.0",
+    "ntp-client": "^0.5.3",    
+    "soap": "^0.14.0",
+    "xml": "^1.0.1",
+    "xml2js": "^0.4.16"    
+  }
 }

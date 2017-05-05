@@ -8,7 +8,13 @@ var fs = require('fs'),
 	XmlBuild = require('xml'),
 	ntpClient = require('ntp-client'),
 	SignHelper = require('./sign'),
-	AfipURLs = require('./urls');
+	AfipURLs = require('./urls'),
+  path = require('path');
+
+global.keys = {
+	private: path.join(__dirname, '..', 'keys', 'afip.key'),
+	public: path.join(__dirname, '..', 'keys', 'afip.pem')
+};
 
 class Tokens {
 	constructor() {
@@ -59,7 +65,6 @@ class Tokens {
 				if (err) {
 					reject(err);
 				} else {
-					console.log("Current time: ", date);
 					resolve(date);
 				}
 			});
@@ -137,10 +142,6 @@ class Tokens {
 	}
 
 	generateToken(service, refresh) {
-		// Parse some of the Services
-		if(service == 'wsfev1') {
-			service = 'wsfe';
-		}
 		
 		return new Promise((resolve, reject) => {
 
@@ -158,7 +159,7 @@ class Tokens {
 								// console.info(xml_response);
 								if (xml_response) {
 									this.parseXML(xml_response).then((res) => {
-										console.info(res.loginticketresponse.header);
+										// console.info(res.loginticketresponse.header);
 										var credentials = res.loginticketresponse.credentials;
 
 										this.cache[service] = {
