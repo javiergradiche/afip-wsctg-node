@@ -1,0 +1,24 @@
+{
+  "name": "afip-wsctg-node",
+  "version": "1.0.0",
+  "description": "Web service para conectarse con el servicio de trazabilidad de granos de la afip",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierkeants/afip-wsctg-node.git"
+  },
+  "keywords": [
+    "afip",
+    "wsctg",
+    "nodejs"
+  ],
+  "author": "Javier Gradiche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javierkeants/afip-wsctg-node/issues"
+  },
+  "homepage": "https://github.com/javierkeants/afip-wsctg-node#readme"
+}
