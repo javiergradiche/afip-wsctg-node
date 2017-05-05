@@ -12,14 +12,14 @@ var fs = require('fs'),
   path = require('path');
 
 global.keys = {
-	private: path.join(__dirname, '..', 'keys', 'afip.key'),
-	public: path.join(__dirname, '..', 'keys', 'afip.pem')
+	private: process.env.AFIP_KEY,
+	public: process.env.AFIP_PEM,
 };
 
 class Tokens {
 	constructor() {
-		this.privateKey = fs.readFileSync(global.keys.private, 'utf8');
-		this.publicKey = fs.readFileSync(global.keys.public, 'utf8');
+		this.privateKey = global.keys.private; 
+		this.publicKey = global.keys.public;
 
 		this.client = false;
 

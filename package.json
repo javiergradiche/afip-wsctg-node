@@ -1,6 +1,6 @@
 {
   "name": "afip-wsctg-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web service para conectarse con el servicio de trazabilidad de granos de la afip",
   "main": "index.js",
   "scripts": {
