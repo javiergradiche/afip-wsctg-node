@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javierkeants/afip-wsctg-node.git"
+    "url": "git+https://github.com/javiergradiche/afip-wsctg-node.git"
   },
   "keywords": [
     "afip",
@@ -18,7 +18,7 @@
   "author": "Javier Gradiche",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/javierkeants/afip-wsctg-node/issues"
+    "url": "https://github.com/javiergradiche/afip-wsctg-node/issues"
   },
-  "homepage": "https://github.com/javierkeants/afip-wsctg-node#readme"
+  "homepage": "https://github.com/javiergradiche/afip-wsctg-node#readme"
 }
